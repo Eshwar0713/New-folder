@@ -68,3 +68,11 @@ article p{
 article h1{
     cursor: default;
 }
+.suggester h3{
+    background-color: white;
+    border-radius: 3px;
+    padding: 15px;
+}
+.suggester h3:hover{
+    background-color: lightblue;
+}

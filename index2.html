@@ -12,6 +12,8 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+
+
 <body> 
     
     
@@ -26,7 +28,17 @@
 
 
     <section class="searchbox">
-        <input type="text" placeholder="Search Your Favourite">
+        <input type="text" placeholder="Search Your Favourite" onkeyup="show(event)" onkeypress="update(event)" style="font-size: 15px;">
+        <div class="suggester" style="text-align: left; position: absolute; left: 283px; border: 1px grey solid; width: 58%;" onkeyup="paste(event)">
+            <h3>Parotta</h3>
+            <h3>Idle</h3>
+            <h3>Dosa</h3>
+            <h3>Masal Dosa</h3>
+            <h3>Puri</h3>
+            <h3>Chappati</h3>
+            <h3>Biriyani</h3>
+            <h3>Chicken Rice</h3>
+        </div>
     </section>
 
 
@@ -50,3 +62,37 @@
     
 </body>
 </html>
+
+<script>
+        
+    var eText=""
+    var container=document.querySelector(".suggester")
+    var element=container.querySelectorAll("h3")
+    var input=document.querySelector("input")
+    
+    container.style.display="none"
+
+    function show(event)
+    {
+        container.style.display="block"
+    }
+
+    function update(event)
+    {
+        eText=event.target.value.toUpperCase()
+
+        for (var i = 0; i < element.length ;i++)
+        {
+            if(element[i].textContent.toUpperCase().indexOf(eText)<0)
+        {
+            element[i].style.display="none"
+        }
+        else
+        {
+            element[i].style.display="block"
+        }
+        input.value= eText=event.target.value
+        }
+      
+    }
+</script>
