@@ -34,17 +34,18 @@ body{
     margin: 15px 15px 0px 15px;
      height: 35px;
      width: 270px;
-     color: whitesmoke;
+     color: black;
      border-color: whitesmoke;
 }
 input::placeholder{
-    color: whitesmoke;
+    color: black;
 }
 input{
     padding-left: 15px;
     border-radius: 10rem;
 }
 button{
+    font-family: 'poppins',sans-serif;
     margin: 10px;
     padding: 15px;
     color: whitesmoke;

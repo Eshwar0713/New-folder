@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    padding: 15px;
+    cursor: default;
+}
+.navbar{
+    display: flex;
+}
+.navbar p{
+   margin: 10px;
+}
+.navbar p a{
+    text-decoration: none;
+    color: white;
+}
+.navbar p a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+.searchbox{
+    padding: 50px;
+    text-align: center;
+}
+.searchbox input{
+    width: 60%;
+    padding: 15px;
+}
+.itembox div{
+    height: fit-content;
+    width: 220px;
+    border: 1px black solid;
+    display: inline-block;
+}
+.itembox div:hover{
+    background-color: hotpink;
+    color: white;
+}
+
+.itembox{
+    text-align: center;
+    cursor: default;
+}
+article{
+    text-align: center;
+    margin-top: 20px;
+}
+article p{
+    padding: 15px;
+    cursor: default;
+}
+article h1{
+    cursor: default;
+}
